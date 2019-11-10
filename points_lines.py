@@ -1,4 +1,4 @@
-import a1ece650 as main_file
+import ece650-a1 as main_file
 import error_and_output as err
 def pp(x):
     if isinstance(x, float):
