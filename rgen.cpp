@@ -244,23 +244,15 @@ void generateInputForPython(GroupOfStreet gos)
 
     for(int i = 0; i < streetList.size(); i++)
     {
-        string finalStr = "a ";
+        
         string streetName = streetList[i].getStreetName();
-        finalStr += streetName+" ";
+        cout<<"a \""<< streetName<<"\" ";
         vector<Point> coOrdinates = streetList[i].getCoOrdinates();
         for(int j = 0; j < coOrdinates.size(); j++)
         {
-            if(j == coOrdinates.size()-1)
-            {
-                finalStr+= "("+to_string(coOrdinates[j].getXCord())+","+to_string(coOrdinates[j].getYCord())+")";
-            }
-            else
-            {
-                finalStr+= "("+to_string(coOrdinates[j].getXCord())+","+to_string(coOrdinates[j].getYCord())+") ";
-            }
-
+            cout<<"("<<coOrdinates[j].getXCord()<<","<<coOrdinates[j].getYCord()<<") ";
         }
-        cout<<finalStr<<endl;
+	cout<<endl;
     }
     cout<<"g"<<endl;
 }

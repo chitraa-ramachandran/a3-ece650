@@ -14,6 +14,7 @@ int main()
     {
         string strVertices;
         getline(cin,strVertices);
+	cout<<strVertices<<endl;
         if(!cin || strVertices == "")
         {
             if(cin.eof())
@@ -36,6 +37,7 @@ int main()
                     V = parseStringV(strVertices);
                     string strEdges;
                     getline(cin, strEdges);
+		    cout<<strEdges<<endl;
                     if(!cin || strEdges == "")
                     {
                         if(cin.eof())
