@@ -14,7 +14,7 @@ int main()
     {
         string strVertices;
         getline(cin,strVertices);
-	cout<<strVertices<<endl;
+	//cout<<strVertices<<endl;
         if(!cin || strVertices == "")
         {
             if(cin.eof())
@@ -31,7 +31,8 @@ int main()
         {
             if(strVertices[0] == 'V')
             {
-                bool checkSyntaxForV = regexCheckForV(strVertices);
+                cout<<strVertices<<endl;
+		bool checkSyntaxForV = regexCheckForV(strVertices);
                 if(checkSyntaxForV)
                 {
                     V = parseStringV(strVertices);
